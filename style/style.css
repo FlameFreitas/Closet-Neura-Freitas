@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    background-color: #C0C0C0;
+    color: white;
+
+}
+
+/* Header */
+
+.header{
+    background: rgb(139,69,19);
+    background: linear-gradient(130deg, rgba(139,69,19,1) 0%, rgba(160,82,45,1) 50%);
+    padding: 25px;
+}
+
+.titulo_pagina{
+    color: black;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.pesquisa{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 24px;
+    padding: 1em;
+    width: 30%;
+}
+
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+
+}
+
+.icone_cabide{
+    width: 40px;
+
+}
+
+.botoes{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 8px;
+    transition: 0.7s;
+}
+
+.botoes:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+
+}
+
+.login{
+text-decoration: none;
+color: white;
+
+}
+
+/* Carrousel */
+
+.imgCarrousel {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* Produtos em destaque */
+
+.produtos_em_destaque{
+color: black;
+text-align: center;
+font-size: 25px;
+
+}
+
+.organizacao_roupa{
+    padding: 200px 0px 0px 150px;
+    width: 400px;
+    height: 550px;
+    text-align: justify;
+    color: black;
+    font-size: 1.25rem;
+    font-family: var(--font-texto-jogos);
+    font-weight: 400;
+    display: inline-block;
+}
+
+
+.nome_roupa{
+    text-align: center;
+    font-family: var(--font-titulo-jogos);
+}
+
+.imgRoupas{
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-radius: 3%;
+}
+
+/* Rodapé */
+
+hr {
+    margin: 0;
+}
+
+.rodape {
+    background-color: white;
+    padding: 1em;
+}
+
+.lista-rodape {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .rodape {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .lista-rodape {
+        display: block;
+    }
+
+    .lista-rodape__item {
+        display: flex;
+        align-items: center;
+        margin: 0.6em 0;
+    }
+
+    .imgRodape{
+        width: 25px;
+
+    }
+
+    .lista-rodape__link {
+        color: var(--cinza);
+        text-decoration: none;
+        margin-left: 0.6em;
+    }
+
+    .titulos_rodape{
+        font-size: 14px;
+        color: black;
+        text-decoration: none;
+
+    }
+
+    .rodape__titulo {
+        font-size: 24px;
+
+    }
+
+}
+
+
+@media screen and (min-width:1728px){
+    .lista-rodape{
+        border-left: 1px solid var(--cinza-claro);
+        padding-left: 1em;
+    }
+
+    .rodape{
+        padding: 3em 0;
+
+    }
+
+
+}
+
