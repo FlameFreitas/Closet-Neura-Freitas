@@ -15,15 +15,14 @@ main{
 /* Header */
 
 .header{
-    background: rgb(139,69,19);
-    background: linear-gradient(130deg, rgba(139,69,19,1) 0%, rgba(160,82,45,1) 50%);
+    background: rgb(194, 186, 167);
     padding: 25px 0px 25px 0px;
 }
 
 .titulo_pagina{
     color: black;
     font-size: 30px;
-    font-family: 'Dancing Script', cursive;
+    font-family: 'MuseoModerno', cursive;
 
 }
 
@@ -43,15 +42,19 @@ main{
     transition: 0.7s;
 }
 
+.titulo_pesquisa{
+    padding: 5px 500px 10px 30px;
+}
+
 .container_header{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 40px;
 
 }
 
 .icone_cabide{
-    width: 40px;
+    width: 70px;
 
 }
 
@@ -107,12 +110,11 @@ font-size: 25px;
 
 .organizacao_roupa{
     padding: 200px 0px 0px 150px;
-    width: 400px;
-    height: 550px;
+    width: 300px;
+    height: 450px;
     text-align: justify;
     color: black;
     font-size: 1.25rem;
-    font-family: var(--font-texto-jogos);
     font-weight: 400;
     display: inline-block;
 }
@@ -314,6 +316,41 @@ height: 450px;
 }
 
 
+/* Cadastro-login */
 
+.genero{
+    border-radius: 3px;
+    padding: 7px 15px 7px 15px;
+
+}
+
+.cadastro_login{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.botoes_login_cadastrar{
+    font-family: 'MuseoModerno', cursive;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 5px 30px 5px 30px;
+    transition: 0.7s;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.botoes_login_cadastrar:hover{
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+
+}
 
 
