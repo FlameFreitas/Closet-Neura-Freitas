@@ -1,15 +1,14 @@
-var senha = $('#senha');
-var olho= $("#olho");
+const form = document.querySelector('.formularioCenter')
 
-olho.mousedown(function() {
-  senha.attr("type", "text");
-});
 
-olho.mouseup(function() {
-  senha.attr("type", "password");
-});
-// para evitar o problema de arrastar a imagem e a senha continuar exposta, 
-//citada pelo nosso amigo nos comentários
-$( "#olho" ).mouseout(function() { 
-  $("#senha").attr("type", "password");
-});
+function login() {
+  var senha = document.getElementById('senha').value
+  var email = document.getElementById('email').value
+
+  if (senha === "admin" && email === "admin") {
+    alert('sucesso')
+  } else {
+    alert('Senha incorreta')
+  }
+
+}

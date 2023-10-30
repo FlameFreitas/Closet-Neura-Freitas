@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,91 +9,97 @@
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" type="imagex/png" href="Imagens/Cabide.png">
 </head>
+
 <body>
     <header class="header">
         <div class="titulo_pesquisa">
-            <h1 class="titulo_pagina"><img class="icone_cabide" src="Imagens/logo.jfif" alt="Cabide">CLOSET NEURA FREITAS</h1>
+            <h1 class="titulo_pagina"><img class="icone_cabide" src="Imagens/logo.jfif" alt="Cabide">CLOSET NEURA
+                FREITAS</h1>
         </div>
-            <nav  class="container_header">
-        
-        <input type="search" class="pesquisa" placeholder="O que esta procurando?">
-        
-        <a class="botoes" href="index.html">Home</a>
-        <a class="botoes" href="contato.html">Contato</a>
-        <a class="botoes" href="QuemSomos.html">Quem somos</a>
-        <a class="login" href="Cadastro.html">Entre ou cadastre-se</a>
-        
+        <nav class="container_header">
+
+            <input type="search" class="pesquisa" placeholder="O que esta procurando?">
+
+            <a class="botoes" href="index.html">Home</a>
+            <a class="botoes" href="contato.html">Contato</a>
+            <a class="botoes" href="QuemSomos.html">Quem somos</a>
+            <a class="login" href="Cadastro.html">Entre ou cadastre-se</a>
+
         </nav>
-        
-        </header>
+
+    </header>
 
     <main>
         <div class="formularioCenter">
-        
+
             <section>
                 <h2 class="formularioCenter">Login</h2>
                 <form method="post">
                     <label class="textForm">Email</label>
-                    <input type="email" name="email" placeholder="Digite seu email..." autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Digite seu email..." autocomplete="off" required
+                        id="email">
                     <label class="textForm">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite sua senha..." autocomplete="off" required>
+                    <input type="password" name="senha" placeholder="Digite sua senha..." autocomplete="off" required
+                        id="senha">
                     <br><br>
                     <div class="cadastro_login">
-                    <a href="index.html"> <button type="button" class="botoes_login_cadastrar">Logar</button></a>
-                </div>
+                        <button type="button" class="botoes_login_cadastrar" onclick="login()">Logar</button>
+                    </div>
                 </form>
                 <br><br><br>
             </section>
 
     </main>
-    
-            <!-- Rodapé -->
-            <footer class="rodape">
-                <div class="titulos_rodape">
-                <h2 class="rodape__titulo">Closet Neura Freitas</h2>
+
+    <!-- Rodapé -->
+    <footer class="rodape">
+        <div class="titulos_rodape">
+            <h2 class="rodape__titulo">Closet Neura Freitas</h2>
+        </div>
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Redes Sociais</li>
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeInstagram.png" alt="Logo do instagram">
+                <a href="#" class="lista-rodape__link">Instagram</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeFacebook.png" alt="Logo do facebook">
+                <a href="#" class="lista-rodape__link">Facebook</a>
+            </li>
+        </ul>
+
+        <ul class="lista-rodape">
+            <div class="titulos_rodape">
+                <li class="lista-rodape__titulo">Telefones para contato</li>
             </div>
-                <ul class="lista-rodape">
-                    <li class="lista-rodape__titulo">Redes Sociais</li>
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeInstagram.png" alt="Logo do instagram">
-                        <a href="#" class="lista-rodape__link">Instagram</a>
-                    </li>
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeFacebook.png" alt="Logo do facebook">
-                        <a href="#" class="lista-rodape__link">Facebook</a>
-                    </li>
-                </ul>
-        
-                <ul class="lista-rodape">
-                    <div class="titulos_rodape">
-                    <li class="lista-rodape__titulo">Telefones para contato</li>
-                </div>
-        
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
-                        <a href="https://wa.me/5517996755014" class="lista-rodape__link">Queina</a>
-                    </li>
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
-                        <a href="https://wa.me/5517997531776" class="lista-rodape__link">Lucimara</a>
-                    </li>
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
-                        <a href="https://wa.me/5517" class="lista-rodape__link">Juliana</a>
-                    </li>
-                </ul>
-        
-        
-                <ul class="lista-rodape">
-                    <li class="lista-rodape__titulo">Como nos Encontrar</li>
-        
-                    <li class="lista-rodape__item">
-                        <img class="imgRodape" src="imagens/IconeEndereco.png" alt="Icone Endereço">
-                        <a href="https://maps.app.goo.gl/pU9UUpDd9Q1qiZN28" class="lista-rodape__link">Avenida manoel marques rosa n1388</a>
-                    </li>
-                </ul>
-        
-        </footer>
+
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
+                <a href="https://wa.me/5517996755014" class="lista-rodape__link">Queina</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
+                <a href="https://wa.me/5517997531776" class="lista-rodape__link">Lucimara</a>
+            </li>
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeWhatsapp.png" alt="Logo do Whatsapp">
+                <a href="https://wa.me/5517" class="lista-rodape__link">Juliana</a>
+            </li>
+        </ul>
+
+
+        <ul class="lista-rodape">
+            <li class="lista-rodape__titulo">Como nos Encontrar</li>
+
+            <li class="lista-rodape__item">
+                <img class="imgRodape" src="imagens/IconeEndereco.png" alt="Icone Endereço">
+                <a href="https://maps.app.goo.gl/pU9UUpDd9Q1qiZN28" class="lista-rodape__link">Avenida manoel marques
+                    rosa n1388</a>
+            </li>
+        </ul>
+
+    </footer>
 
 </body>
+
 </html>
